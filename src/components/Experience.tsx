@@ -4,19 +4,6 @@ import { ExternalLink, Calendar, MapPin } from "lucide-react";
 
 const experiences = [
   {
-    title: "Biography Website",
-    company: "Biographyon.top",
-    location: "Remote",
-    period: "Jun 2024 - Present",
-    type: "Web Development",
-    responsibilities: [
-      "Creating user accounts and ensuring seamless onboarding",
-      "Assisting users with account setup and troubleshooting",
-      "Developing new web integrations to enhance user experience"
-    ],
-    technologies: ["Web Development", "User Management", "Integration"]
-  },
-  {
     title: "Helpdesk Technician",
     company: "Yonder",
     location: "Netherlands",
@@ -51,10 +38,10 @@ const Experience = () => {
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">
-            Professional Experience
+            Work Experience
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            A journey through diverse roles that shaped my technical expertise and problem-solving skills
+            Learning through various roles while pursuing my studies
           </p>
         </div>
         

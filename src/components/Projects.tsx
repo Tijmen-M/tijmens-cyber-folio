@@ -82,20 +82,6 @@ const projects = [
       "Hardware Customization"
     ]
   },
-  {
-    title: "Self-Hosted Infrastructure",
-    description: "Personal website hosting and infrastructure management using Raspberry Pi with custom security configurations and domain management.",
-    technologies: ["System Administration", "Web Hosting", "Network Security", "Linux"],
-    type: "Infrastructure",
-    status: "Live Production",
-    url: "https://tijmenmutsaers.com",
-    features: [
-      "Custom Web Server Configuration",
-      "Security Hardening & Firewall",
-      "Domain & SSL Management",
-      "Self-Hosted Services"
-    ]
-  }
 ];
 
 const Projects = () => {
@@ -108,7 +94,7 @@ const Projects = () => {
             Featured Projects
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            A showcase of my cybersecurity and hardware projects focusing on penetration testing, network security, and system administration
+            Learning projects in cybersecurity and hardware experimentation as part of my studies
           </p>
         </div>
         
@@ -179,23 +165,6 @@ const Projects = () => {
                     ))}
                   </div>
                 </div>
-                
-                {/* Action Buttons */}
-                {project.url && (
-                  <div className="pt-2">
-                    <Button 
-                      size="sm" 
-                      variant="outline" 
-                      className="w-full group/btn hover:bg-primary/10 transition-all duration-300"
-                      asChild
-                    >
-                      <a href={project.url} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="w-3.5 h-3.5 mr-2 group-hover/btn:rotate-12 transition-transform" />
-                        Visit Project
-                      </a>
-                    </Button>
-                  </div>
-                )}
               </CardContent>
             </div>
           ))}
