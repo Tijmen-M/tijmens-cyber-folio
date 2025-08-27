@@ -94,7 +94,7 @@ const Projects = () => {
             Featured Projects
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Learning projects in cybersecurity and hardware experimentation as part of my studies
+            Personal projects in cybersecurity and hardware - learned mostly through self-study and some school coursework
           </p>
         </div>
         

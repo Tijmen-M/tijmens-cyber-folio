@@ -5,9 +5,9 @@ import { ExternalLink, Calendar, MapPin } from "lucide-react";
 const experiences = [
   {
     title: "IT Technician",
-    company: "Yonder",
+    company: "Zinkunie",
     location: "Netherlands", 
-    period: "Jun 2023 - Present",
+    period: "Dec 2024 - Present",
     type: "Technical Support",
     responsibilities: [
       "Advanced troubleshooting of hardware and software issues",
