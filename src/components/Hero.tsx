@@ -20,17 +20,6 @@ const Hero = () => {
       <div className="absolute bottom-32 right-32 w-48 h-48 rounded-full bg-accent/20 blur-xl floating" style={{ animationDelay: '2s' }} />
       <div className="absolute top-1/2 left-10 w-24 h-24 rounded-full bg-primary-glow/30 blur-lg floating" style={{ animationDelay: '4s' }} />
       
-      {/* Profile Photo */}
-      <div className="absolute top-8 right-8 z-10 hidden lg:block animate-fade-in" style={{ animationDelay: '0.8s' }}>
-        <div className="w-32 h-32 rounded-2xl overflow-hidden border-4 border-white/20 shadow-2xl backdrop-blur-sm bg-white/10 hover:scale-105 transition-transform duration-300">
-          <img 
-            src="/lovable-uploads/ec0c1166-01e4-417c-89a3-24a47c93dd34.png" 
-            alt="Tijmen Mutsaers in autumn forest"
-            className="w-full h-full object-cover"
-          />
-        </div>
-      </div>
-
       {/* Main Content */}
       <div className="relative z-10 text-center max-w-5xl mx-auto px-6">
         {/* Name & Title */}

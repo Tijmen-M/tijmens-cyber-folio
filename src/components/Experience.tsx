@@ -7,7 +7,7 @@ const experiences = [
     title: "IT Technician",
     company: "Zinkunie",
     location: "Netherlands", 
-    period: "2025 - Present",
+    period: "Dec 2024 - Present",
     type: "Technical Support",
     responsibilities: [
       "Advanced troubleshooting of hardware and software issues",
