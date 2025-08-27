@@ -45,10 +45,10 @@ const skillCategories = [
     color: "text-green-400", 
     bgColor: "bg-green-400/10",
     skills: [
-      { name: "Frontend Development", level: 70, description: "React, HTML, CSS, JavaScript" },
-      { name: "User Experience", level: 75, description: "Interface design and usability" },
-      { name: "API Integration", level: 65, description: "Third-party service integration" },
-      { name: "Responsive Design", level: 80, description: "Mobile-first development" }
+      { name: "Frontend Development", level: 25, description: "React, HTML, CSS, JavaScript - beginner level" },
+      { name: "User Experience", level: 20, description: "Basic interface design knowledge" },
+      { name: "API Integration", level: 30, description: "Learning third-party service integration" },
+      { name: "Responsive Design", level: 25, description: "Basic mobile-first development" }
     ]
   },
   {

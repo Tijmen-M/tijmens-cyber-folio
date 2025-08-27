@@ -53,7 +53,7 @@ const Contact = () => {
           </p>
         </div>
         
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid lg:grid-cols-3 gap-8 items-start">
           {/* Contact Information */}
           <div className="lg:col-span-2 space-y-6">
             {contactMethods.map((method, index) => (
@@ -101,7 +101,7 @@ const Contact = () => {
           </div>
           
           {/* Availability & Quick Info */}
-          <div className="space-y-6">
+          <div className="space-y-6 h-fit">
             {/* Current Availability */}
             <div className="animate-fade-in glass-card p-6" style={{ animationDelay: '0.4s' }}>
               <div className="flex items-center gap-3 mb-6">
