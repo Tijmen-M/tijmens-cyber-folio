@@ -44,6 +44,32 @@ const projects = [
     ]
   },
   {
+    title: "Proxmox Homelab Infrastructure",
+    description: "Complete virtualized homelab environment running multiple services and virtual machines for learning and development purposes.",
+    technologies: ["Proxmox VE", "Virtualization", "Linux", "System Administration"],
+    type: "Infrastructure",
+    status: "Active Deployment",
+    features: [
+      "Multiple VM Management",
+      "Container Orchestration",
+      "Resource Monitoring",
+      "Service Deployment"
+    ]
+  },
+  {
+    title: "Pi-hole Network Security",
+    description: "Network-wide ad blocker and DNS sinkhole providing enhanced security and privacy protection for all connected devices.",
+    technologies: ["DNS Management", "Network Security", "Raspberry Pi", "Linux"],
+    type: "Network Security",
+    status: "Production Use",
+    features: [
+      "DNS Filtering & Blocking",
+      "Network Traffic Analysis",
+      "Custom Blocklist Management",
+      "Real-time Query Monitoring"
+    ]
+  },
+  {
     title: "Pwnagotchi Customization",
     description: "AI-powered WiFi security tool running on Raspberry Pi Zero with custom plugins and configurations for network security research.",
     technologies: ["AI/ML", "WiFi Security", "Python", "Raspberry Pi"],
@@ -101,6 +127,7 @@ const Projects = () => {
                     {project.type === "Security Tool" && <Code className="w-6 h-6 text-primary" />}
                     {project.type === "Hardware Development" && <Globe className="w-6 h-6 text-primary" />}
                     {project.type === "Security Research" && <Code className="w-6 h-6 text-primary" />}
+                    {project.type === "Network Security" && <Code className="w-6 h-6 text-primary" />}
                     {project.type === "Infrastructure" && <ExternalLink className="w-6 h-6 text-primary" />}
                   </div>
                   <Badge 
