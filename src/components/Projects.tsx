@@ -61,7 +61,7 @@ const projects = [
     description: "Network-wide ad blocker and DNS sinkhole providing enhanced security and privacy protection for all connected devices.",
     technologies: ["DNS Management", "Network Security", "Raspberry Pi", "Linux"],
     type: "Network Security",
-    status: "Production Use",
+    status: "Home Use",
     features: [
       "DNS Filtering & Blocking",
       "Network Traffic Analysis",

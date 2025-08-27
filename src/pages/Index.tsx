@@ -48,14 +48,6 @@ const Index = () => {
         <Contact />
       </section>
       
-      {/* Footer */}
-      <footer className="py-8 px-6 border-t border-border/50 bg-secondary/20">
-        <div className="max-w-6xl mx-auto text-center">
-          <p className="text-muted-foreground">
-            © 2024 Tijmen Mutsaers. Built with React, TypeScript & Tailwind CSS.
-          </p>
-        </div>
-      </footer>
     </div>
   );
 };

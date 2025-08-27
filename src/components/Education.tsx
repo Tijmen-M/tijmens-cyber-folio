@@ -4,17 +4,17 @@ import { GraduationCap, Award, Calendar } from "lucide-react";
 
 const educationData = [
   {
-    title: "IT System Engineer",
+    title: "IT Technician",
     institution: "Yonder",
     period: "2023 - Present",
     status: "In Progress",
-    type: "Bachelor's Degree",
-    description: "Comprehensive program focusing on system engineering, network administration, and cybersecurity fundamentals.",
+    type: "Vocational Diploma (MBO4)",
+    description: "Practical IT program covering basic system administration, hardware troubleshooting, and network fundamentals.",
     highlights: [
-      "Advanced System Administration",
-      "Network Security & Protocols", 
-      "Cloud Infrastructure",
-      "DevOps Methodologies"
+      "System Administration Basics",
+      "Hardware & Software Support", 
+      "Network Configuration",
+      "User Support & Troubleshooting"
     ]
   },
   {
@@ -34,10 +34,10 @@ const educationData = [
 ];
 
 const certifications = [
-  "Linux Administration",
-  "Penetration Testing Basics",
-  "Vulnerability Assessment",
-  "System Security"
+  "Linux Basics",
+  "Network Fundamentals",
+  "Hardware Troubleshooting",
+  "System Maintenance"
 ];
 
 const Education = () => {
@@ -50,7 +50,7 @@ const Education = () => {
             Education & Learning
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Continuous growth through formal education and self-directed learning in cybersecurity
+            Building foundational IT skills through vocational education and hands-on learning
           </p>
         </div>
         
@@ -124,7 +124,7 @@ const Education = () => {
               </div>
               
               <p className="text-muted-foreground mb-6 text-sm leading-relaxed">
-                Actively pursuing cybersecurity knowledge through online courses and practical projects.
+                Learning IT fundamentals through online courses and practical projects.
               </p>
               
               <div className="space-y-3">
@@ -146,15 +146,15 @@ const Education = () => {
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
                   <div className="w-3 h-3 rounded-full bg-primary animate-pulse-glow" />
-                  <span className="text-sm">Penetration Testing</span>
+                  <span className="text-sm">Network Administration</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-3 h-3 rounded-full bg-accent animate-pulse-glow" style={{ animationDelay: '1s' }} />
-                  <span className="text-sm">Vulnerability Assessment</span>
+                  <span className="text-sm">System Troubleshooting</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-3 h-3 rounded-full bg-primary-glow animate-pulse-glow" style={{ animationDelay: '2s' }} />
-                  <span className="text-sm">Linux System Administration</span>
+                  <span className="text-sm">Hardware Support</span>
                 </div>
               </div>
             </div>

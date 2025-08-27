@@ -4,6 +4,19 @@ import { ExternalLink, Calendar, MapPin } from "lucide-react";
 
 const experiences = [
   {
+    title: "IT Technician",
+    company: "Yonder",
+    location: "Netherlands", 
+    period: "Jun 2023 - Present",
+    type: "Technical Support",
+    responsibilities: [
+      "Advanced troubleshooting of hardware and software issues",
+      "Managing network configurations and system deployments",
+      "Training users on technical systems and best practices"
+    ],
+    technologies: ["System Administration", "Network Management", "Hardware Support"]
+  },
+  {
     title: "Helpdesk Technician",
     company: "Yonder",
     location: "Netherlands",
