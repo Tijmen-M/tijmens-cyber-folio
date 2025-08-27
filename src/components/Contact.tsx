@@ -98,6 +98,26 @@ const Contact = () => {
                 </div>
               </div>
             ))}
+            
+            {/* Call to Action */}
+            <div className="animate-fade-in glass-card p-6 text-center" style={{ animationDelay: '0.8s' }}>
+              <div className="p-4 rounded-full bg-gradient-to-r from-primary/20 to-accent/20 w-fit mx-auto mb-4">
+                <MessageCircle className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="text-lg font-bold mb-3">Ready to Start?</h3>
+              <p className="text-muted-foreground text-sm mb-6">
+                Feel free to reach out with any questions or if you'd like to discuss technology and cybersecurity.
+              </p>
+              <Button 
+                className="w-full glass-card glow hover:shadow-[var(--shadow-float)] transition-all duration-300"
+                asChild
+              >
+                <a href="mailto:trtmutsaers@gmail.com">
+                  <Mail className="w-4 h-4 mr-2" />
+                  Send Message
+                </a>
+              </Button>
+            </div>
           </div>
           
           {/* Availability & Quick Info */}
@@ -149,26 +169,6 @@ const Contact = () => {
                   </Badge>
                 </div>
               </div>
-            </div>
-            
-            {/* Call to Action */}
-            <div className="animate-fade-in glass-card p-6 text-center w-full" style={{ animationDelay: '0.8s' }}>
-              <div className="p-4 rounded-full bg-gradient-to-r from-primary/20 to-accent/20 w-fit mx-auto mb-4">
-                <MessageCircle className="w-6 h-6 text-primary" />
-              </div>
-              <h3 className="text-lg font-bold mb-3">Ready to Start?</h3>
-              <p className="text-muted-foreground text-sm mb-6">
-                Feel free to reach out with any questions or if you'd like to discuss technology and cybersecurity.
-              </p>
-              <Button 
-                className="w-full glass-card glow hover:shadow-[var(--shadow-float)] transition-all duration-300"
-                asChild
-              >
-                <a href="mailto:trtmutsaers@gmail.com">
-                  <Mail className="w-4 h-4 mr-2" />
-                  Send Message
-                </a>
-              </Button>
             </div>
           </div>
         </div>
