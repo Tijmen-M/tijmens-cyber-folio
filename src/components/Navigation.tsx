@@ -130,7 +130,7 @@ const Navigation = () => {
         </div>
       )}
 
-      {/* Floating Social Links */}
+      {/* Floating Contact Link */}
       <div className="fixed right-6 top-1/2 transform -translate-y-1/2 z-40 hidden lg:flex flex-col gap-3">
         <Button
           variant="outline"
@@ -140,16 +140,6 @@ const Navigation = () => {
         >
           <a href="mailto:trtmutsaers@gmail.com" target="_blank" rel="noopener noreferrer">
             <Mail className="w-4 h-4 group-hover:scale-110 transition-transform" />
-          </a>
-        </Button>
-        <Button
-          variant="outline"
-          size="sm"
-          className="glass-card w-12 h-12 p-0 group hover:shadow-[var(--shadow-glow)] transition-all duration-300"
-          asChild
-        >
-          <a href="https://github.com/Tijmen-M" target="_blank" rel="noopener noreferrer">
-            <Code className="w-4 h-4 group-hover:scale-110 transition-transform" />
           </a>
         </Button>
       </div>

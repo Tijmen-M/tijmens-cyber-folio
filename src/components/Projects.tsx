@@ -1,47 +1,73 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github, Code, Globe } from "lucide-react";
+import { ExternalLink, Mail, Code, Globe } from "lucide-react";
 
 const projects = [
   {
-    title: "Biography Website Platform",
-    description: "A comprehensive web platform for creating and managing personal biography websites with user account management and seamless onboarding.",
-    technologies: ["Web Development", "User Management", "Database Design", "API Integration"],
-    type: "Web Application",
-    status: "Live Production",
-    url: "https://biographyon.top",
-    features: [
-      "User Account Creation & Management",
-      "Seamless Onboarding Experience", 
-      "Web Integration Development",
-      "Customer Support Systems"
-    ]
-  },
-  {
-    title: "Penetration Testing Projects",
-    description: "Hands-on cybersecurity projects focusing on vulnerability assessment and penetration testing methodologies using various testing frameworks.",
-    technologies: ["Penetration Testing", "Vulnerability Assessment", "Linux", "Security Tools"],
-    type: "Security Research",
+    title: "Flipper Zero Experimentation",
+    description: "Pentesting multitool experimentation with various firmwares and custom code implementations for security research and learning.",
+    technologies: ["Hardware Hacking", "Firmware", "RF Testing", "Security Research"],
+    type: "Hardware Security",
     status: "Ongoing Learning",
     features: [
-      "Network Vulnerability Scanning",
-      "Web Application Security Testing",
-      "Linux System Exploitation",
-      "Security Documentation & Reports"
+      "Custom Firmware Testing",
+      "RF Signal Analysis",
+      "Security Protocol Testing",
+      "Hardware Exploitation"
     ]
   },
   {
-    title: "Personal Portfolio",
-    description: "Modern, responsive portfolio website showcasing professional experience, technical skills, and project work with smooth animations and glassmorphism design.",
-    technologies: ["React", "TypeScript", "Tailwind CSS", "Responsive Design"],
-    type: "Frontend Development", 
-    status: "Recently Updated",
+    title: "Bjorn the Cyberviking",
+    description: "Portable vulnerability scanner utilizing various nmap port scanning techniques and protocol brute force capabilities for network security assessment.",
+    technologies: ["Network Security", "Port Scanning", "Protocol Analysis", "Linux"],
+    type: "Security Tool",
+    status: "Active Project",
     features: [
-      "Modern Glassmorphism UI",
-      "Smooth Animations & Transitions",
-      "Fully Responsive Design",
-      "Performance Optimized"
+      "Network Vulnerability Scanning",
+      "Protocol Brute Force Testing",
+      "Automated Security Assessment",
+      "Custom Reporting System"
+    ]
+  },
+  {
+    title: "ESP32 Security Projects",
+    description: "Microcontroller projects ranging from simple connectivity solutions to WiFi security testing and monitoring tools.",
+    technologies: ["IoT Security", "WiFi Testing", "Microcontrollers", "Embedded Systems"],
+    type: "Hardware Development",
+    status: "Multiple Projects",
+    features: [
+      "WiFi Security Testing",
+      "Custom Hardware Integration",
+      "Network Monitoring Tools",
+      "IoT Security Research"
+    ]
+  },
+  {
+    title: "Pwnagotchi Customization",
+    description: "AI-powered WiFi security tool running on Raspberry Pi Zero with custom plugins and configurations for network security research.",
+    technologies: ["AI/ML", "WiFi Security", "Python", "Raspberry Pi"],
+    type: "Security Research",
+    status: "Custom Build",
+    features: [
+      "Custom Plugin Development",
+      "WiFi Handshake Capture",
+      "Network Security Analysis",
+      "Hardware Customization"
+    ]
+  },
+  {
+    title: "Self-Hosted Infrastructure",
+    description: "Personal website hosting and infrastructure management using Raspberry Pi with custom security configurations and domain management.",
+    technologies: ["System Administration", "Web Hosting", "Network Security", "Linux"],
+    type: "Infrastructure",
+    status: "Live Production",
+    url: "https://tijmenmutsaers.com",
+    features: [
+      "Custom Web Server Configuration",
+      "Security Hardening & Firewall",
+      "Domain & SSL Management",
+      "Self-Hosted Services"
     ]
   }
 ];
@@ -56,7 +82,7 @@ const Projects = () => {
             Featured Projects
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            A showcase of my technical projects spanning web development, cybersecurity, and system administration
+            A showcase of my cybersecurity and hardware projects focusing on penetration testing, network security, and system administration
           </p>
         </div>
         
@@ -70,10 +96,12 @@ const Projects = () => {
             >
               <CardHeader className="pb-4">
                 <div className="flex items-start justify-between mb-3">
-                  <div className="p-3 rounded-xl bg-primary/10 group-hover:bg-primary/20 transition-colors">
-                    {project.type === "Web Application" && <Globe className="w-6 h-6 text-primary" />}
+                <div className="p-3 rounded-xl bg-primary/10 group-hover:bg-primary/20 transition-colors">
+                    {project.type === "Hardware Security" && <Code className="w-6 h-6 text-primary" />}
+                    {project.type === "Security Tool" && <Code className="w-6 h-6 text-primary" />}
+                    {project.type === "Hardware Development" && <Globe className="w-6 h-6 text-primary" />}
                     {project.type === "Security Research" && <Code className="w-6 h-6 text-primary" />}
-                    {project.type === "Frontend Development" && <ExternalLink className="w-6 h-6 text-primary" />}
+                    {project.type === "Infrastructure" && <ExternalLink className="w-6 h-6 text-primary" />}
                   </div>
                   <Badge 
                     variant={project.status === "Live Production" ? "default" : "secondary"}
@@ -126,42 +154,36 @@ const Projects = () => {
                 </div>
                 
                 {/* Action Buttons */}
-                <div className="flex gap-2 pt-2">
-                  {project.url && (
+                {project.url && (
+                  <div className="pt-2">
                     <Button 
                       size="sm" 
                       variant="outline" 
-                      className="flex-1 group/btn hover:bg-primary/10 transition-all duration-300"
+                      className="w-full group/btn hover:bg-primary/10 transition-all duration-300"
                       asChild
                     >
                       <a href={project.url} target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="w-3.5 h-3.5 mr-2 group-hover/btn:rotate-12 transition-transform" />
-                        Visit
+                        Visit Project
                       </a>
                     </Button>
-                  )}
-                  <Button 
-                    size="sm" 
-                    variant="outline" 
-                    className="flex-1 group/btn hover:bg-primary/10 transition-all duration-300"
-                  >
-                    <Github className="w-3.5 h-3.5 mr-2 group-hover/btn:rotate-12 transition-transform" />
-                    Code
-                  </Button>
-                </div>
+                  </div>
+                )}
               </CardContent>
             </div>
           ))}
         </div>
         
-        {/* More Projects CTA */}
+        {/* Contact CTA */}
         <div className="text-center mt-16 animate-fade-in" style={{ animationDelay: '0.8s' }}>
           <p className="text-muted-foreground mb-6">
-            Interested in seeing more of my work?
+            Interested in discussing these projects or collaboration opportunities?
           </p>
-          <Button variant="outline" size="lg" className="glass-card group hover:bg-primary/10 transition-all duration-300">
-            <Github className="w-5 h-5 mr-2 group-hover:rotate-12 transition-transform" />
-            View All Projects on GitHub
+          <Button variant="outline" size="lg" className="glass-card group hover:bg-primary/10 transition-all duration-300" asChild>
+            <a href="mailto:trtmutsaers@gmail.com">
+              <Mail className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
+              Get In Touch
+            </a>
           </Button>
         </div>
       </div>

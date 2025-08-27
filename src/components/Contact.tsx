@@ -17,34 +17,26 @@ const contactMethods = [
     icon: Mail,
     title: "Email",
     value: "trtmutsaers@gmail.com",
-    description: "Best for formal inquiries and detailed discussions",
+    description: "Best way to reach me for questions or discussions",
     href: "mailto:trtmutsaers@gmail.com",
     primary: true
-  },
-  {
-    icon: Github,
-    title: "GitHub",
-    value: "Tijmen-M",
-    description: "View my code and contribute to projects",
-    href: "https://github.com/Tijmen-M",
-    primary: false
   },
   {
     icon: MapPin,
     title: "Location",
     value: "Netherlands",
-    description: "Available for remote work and local opportunities",
+    description: "Currently studying IT System Engineering",
     href: null,
     primary: false
   }
 ];
 
 const availability = [
-  "Full-time opportunities",
-  "Part-time projects", 
-  "Cybersecurity consulting",
-  "Technical collaboration",
-  "System administration support"
+  "Learning opportunities",
+  "Technical discussions", 
+  "Cybersecurity questions",
+  "Academic collaboration",
+  "Project feedback"
 ];
 
 const Contact = () => {
@@ -57,7 +49,7 @@ const Contact = () => {
             Let's Connect
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Ready to collaborate on your next project or discuss opportunities in cybersecurity and system engineering
+            Feel free to reach out for discussions about cybersecurity, technology, or any questions about my projects
           </p>
         </div>
         
@@ -116,7 +108,7 @@ const Contact = () => {
                 <div className="p-2 rounded-lg bg-green-400/10">
                   <Calendar className="w-5 h-5 text-green-400" />
                 </div>
-                <h3 className="text-lg font-bold">Available For</h3>
+                <h3 className="text-lg font-bold">Open To</h3>
               </div>
               
               <div className="space-y-3">
@@ -151,8 +143,10 @@ const Contact = () => {
                   <Badge variant="outline">NL / EN</Badge>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-muted-foreground">Experience</span>
-                  <Badge variant="outline">2+ Years</Badge>
+                  <span className="text-muted-foreground">Current Status</span>
+                  <Badge variant="outline" className="bg-blue-400/10 text-blue-400 border-blue-400/20">
+                    Student
+                  </Badge>
                 </div>
               </div>
             </div>
@@ -164,7 +158,7 @@ const Contact = () => {
               </div>
               <h3 className="text-lg font-bold mb-3">Ready to Start?</h3>
               <p className="text-muted-foreground text-sm mb-6">
-                Let's discuss how I can help with your cybersecurity or development needs.
+                Feel free to reach out with any questions or if you'd like to discuss technology and cybersecurity.
               </p>
               <Button 
                 className="w-full glass-card glow hover:shadow-[var(--shadow-float)] transition-all duration-300"
