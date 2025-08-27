@@ -20,7 +20,7 @@ const experiences = [
     title: "Helpdesk Technician",
     company: "Yonder",
     location: "Netherlands",
-    period: "Aug 2022 - Jun 2023",
+    period: "2022 - 2023",
     type: "Technical Support",
     responsibilities: [
       "Designing user guides and instructional materials for internal services",

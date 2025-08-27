@@ -22,15 +22,8 @@ const Hero = () => {
       
       {/* Main Content */}
       <div className="relative z-10 text-center max-w-5xl mx-auto px-6">
-        {/* Animated Badge */}
-        <div className="animate-fade-in">
-          <Badge variant="secondary" className="glass-card mb-6 px-4 py-2 text-sm font-medium">
-            🚀 Available for New Opportunities
-          </Badge>
-        </div>
-        
         {/* Name & Title */}
-        <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
+        <div className="animate-fade-in">
           <h1 className="text-6xl md:text-8xl font-bold mb-6 gradient-text">
             Tijmen Mutsaers
           </h1>
@@ -40,7 +33,7 @@ const Hero = () => {
         </div>
         
         {/* Description */}
-        <div className="animate-fade-in" style={{ animationDelay: '0.4s' }}>
+        <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
           <p className="text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto mb-12 leading-relaxed">
             A curious 20-year-old Dutch student exploring cybersecurity and system administration. 
             Learning through hands-on projects and experiments with various technologies.
@@ -48,7 +41,7 @@ const Hero = () => {
         </div>
         
         {/* CTA Buttons */}
-        <div className="animate-fade-in flex flex-col sm:flex-row gap-4 justify-center items-center mb-12" style={{ animationDelay: '0.6s' }}>
+        <div className="animate-fade-in flex flex-col sm:flex-row gap-4 justify-center items-center mb-12" style={{ animationDelay: '0.4s' }}>
           <Button size="lg" className="glass-card glow hover:shadow-[var(--shadow-float)] transition-all duration-300" asChild>
             <a href="mailto:trtmutsaers@gmail.com">
               <Mail className="w-5 h-5 mr-2" />
@@ -58,7 +51,7 @@ const Hero = () => {
         </div>
         
         {/* Contact Info */}
-        <div className="animate-fade-in flex justify-center items-center text-muted-foreground" style={{ animationDelay: '0.8s' }}>
+        <div className="animate-fade-in flex justify-center items-center text-muted-foreground" style={{ animationDelay: '0.6s' }}>
           <a 
             href="mailto:trtmutsaers@gmail.com" 
             className="flex items-center gap-2 hover:text-primary transition-colors group"
