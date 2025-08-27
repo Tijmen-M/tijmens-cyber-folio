@@ -152,7 +152,7 @@ const Contact = () => {
             </div>
             
             {/* Call to Action */}
-            <div className="animate-fade-in glass-card p-6 text-center" style={{ animationDelay: '0.8s' }}>
+            <div className="animate-fade-in glass-card p-6 text-center w-full" style={{ animationDelay: '0.8s' }}>
               <div className="p-4 rounded-full bg-gradient-to-r from-primary/20 to-accent/20 w-fit mx-auto mb-4">
                 <MessageCircle className="w-6 h-6 text-primary" />
               </div>
